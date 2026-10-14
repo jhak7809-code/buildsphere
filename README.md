@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+# BuildSphere — Project & Task Management Dashboard
+
+BuildSphere is a project and task management dashboard built with Next.js, TypeScript, and CSS. It provides a simple interface for organizing projects, tracking tasks, and monitoring project completion.
+
+## Features
+
+- Dashboard with project and task summaries
+- Add projects with categories
+- Delete projects when they have no associated tasks
+- Task management with priority and status
+- Search and filter tasks
+- Dynamic project completion progress
+- Browser localStorage for saving projects and tasks between sessions
+- Responsive dashboard styling
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- CSS
+- Browser localStorage
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Install Node.js and npm.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/jhak7809-code/buildsphere.git
+cd buildsphere
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Data Storage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The current version stores project and task data in the browser's localStorage. Data is not yet stored in a centralized database.
 
-## Learn More
+## Learning Outcomes
 
-To learn more about Next.js, take a look at the following resources:
+This project provides practical experience with React components, TypeScript types, state management, event handling, form validation, list rendering, filtering, and browser-based persistence.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Future Improvements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Backend API integration
+- Database integration
+- User authentication
+- Automated testing
+- Deployment
